@@ -1,54 +1,124 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Personal</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
       padding: 0;
+      color: #333;
     }
+
     header {
-      background-color: #0077b6;
+      background-color: #006f91;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
     section {
-      padding: 20px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
+
     .info {
       background-color: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-    }
-    .fotos img {
-      width: 200px;
+      padding: 20px;
+      margin-bottom: 25px;
       border-radius: 10px;
-      margin: 10px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
+
+    .info h2 {
+      font-size: 1.6rem;
+      color: #006f91;
+    }
+
+    .info p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .fotos img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 10px 0;
+    }
+
+    .fotos h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
     .mas-info {
-      display: none; /* Oculto al inicio */
-      background-color: #e6f7ff;
-      padding: 15px;
-      margin-top: 15px;
-      border-left: 4px solid #0077b6;
-      border-radius: 6px;
+      display: none;
+      background-color: #e1f5fe;
+      padding: 20px;
+      margin-top: 25px;
+      border-left: 6px solid #006f91;
+      border-radius: 8px;
+      font-size: 1.1rem;
     }
+
     .link {
-      color: #0077b6;
-      text-decoration: underline;
-      cursor: pointer;
+      color: #006f91;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: #004b63;
+    }
+
+    footer {
+      background-color: #006f91;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .info h2 {
+        font-size: 1.4rem;
+      }
+
+      .info p {
+        font-size: 1rem;
+      }
+
+      .fotos img {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Mi Página Personal</h1>
   </header>
@@ -57,12 +127,27 @@
     <div class="info">
       <h2>Información Personal</h2>
       <p><strong>Nombre:</strong> Maxuel Dario</p>
-      <p><strong>Edad:</strong> 20 añitos</p>
+      <p><strong>Edad:</strong> 20 años</p>
       <p><strong>Ocupación:</strong> Estudiante de Ingeniería</p>
       <p><strong>Correo:</strong> 1002420232@unajma.edu.pe</p>
     </div>
 
     <div class="info fotos">
       <h2>Este soy yo</h2>
-      <img src="fotomax.jpg" alt="Foto personal 1">
-      <h3> <a href="mas.html" class="link">Haz click para saber más de mí</a> </h3> </div> </section> </body> </html>
+      <img src="fotomax.jpg" alt="Foto personal de Maxuel">
+      <h3><a href="mas.html" class="link">Haz clic aquí para saber más de mí</a></h3>
+    </div>
+
+    <!-- Sección de información adicional oculta -->
+    <div class="mas-info">
+      <h3>Más sobre mí...</h3>
+      <p>Aquí puedes agregar información adicional como tus pasatiempos, metas o proyectos en los que estés trabajando. Puedes personalizar esta sección según lo que quieras compartir.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maxuel Dario. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
