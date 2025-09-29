@@ -1,55 +1,113 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Más sobre mí</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #e6f7ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f9ff;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #333;
     }
+
     header {
-      background-color: #0077b6;
+      background-color: #006f91;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
     .info {
       background-color: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+      padding: 25px;
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
+
+    .info p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .info img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 15px;
+    }
+
     a {
       display: inline-block;
-      margin-top: 15px;
-      color: #0077b6;
+      color: #006f91;
       text-decoration: none;
       font-weight: bold;
+      margin-top: 20px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004b63;
+    }
+
+    footer {
+      background-color: #006f91;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .info p {
+        font-size: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Más sobre mí</h1>
   </header>
 
   <div class="info">
-    <p> Soy de Peru, especificamente de de la ciudad de <strong>Abancay</strong></p>
-    <img src="peru.png" alt="Foto Pais">
-    <img src="abancay.png" alt="Foto ciudad">
+    <p>Soy de Perú, específicamente de la ciudad de <strong>Abancay</strong>.</p>
+    <img src="peru.png" alt="Foto del país Perú">
+    <img src="abancay.png" alt="Foto de la ciudad de Abancay">
+    
     <p>🎓 Estudio en la <strong>Universidad Nacional José María Arguedas</strong>.</p>
-    <img src="argedas.jpg" alt="Foto Pais">
+    <img src="argedas.jpg" alt="Foto de la Universidad Nacional José María Arguedas">
+    
     <p>📘 Actualmente curso el <strong>quinto ciclo</strong> de mi carrera universitaria.</p>
+    
     <p>💻 Esta página web ha sido desarrollada como parte de un <strong>trabajo del curso de Programación Web</strong>.</p>
-    <h3> <a href="ultimo.html" class="link">Mis cosas favoritas</a> </h3> </div> </section> </body> </html>
-
+    
+    <h3><a href="ultimo.html" class="link">Mis cosas favoritas</a></h3>
+    
     <a href="index.html">⬅️ Volver a la página principal</a>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Maxuel Dario. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
-```
+
