@@ -1,46 +1,113 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Más sobre mí</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fffaf2;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      color: #333;
     }
+
     header {
-      background-color: #0077b6;
+      background-color: #006f91;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
     .info {
       background-color: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
-    h2 {
-      color: #0077b6;
+
+    .info h2 {
+      color: #006f91;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
     }
+
+    .info p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
     ul {
-      list-style: "👉 ";
+      list-style: none;
       padding-left: 20px;
+      margin-top: 10px;
     }
+
+    ul li {
+      font-size: 1.1rem;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "👉";
+      position: absolute;
+      left: 0;
+    }
+
     a {
       display: inline-block;
-      margin-top: 15px;
-      color: #0077b6;
+      color: #006f91;
       text-decoration: none;
       font-weight: bold;
+      margin-top: 20px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #004b63;
+    }
+
+    footer {
+      background-color: #006f91;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .info {
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .info h2 {
+        font-size: 1.3rem;
+      }
+
+      .info p, ul li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Más sobre mí</h1>
   </header>
@@ -50,22 +117,26 @@
     <p>🍲 Mi comida favorita es el <strong>Pollo a la plancha</strong>, un plato que me encanta por su sabor único.</p>
 
     <h2>Actividad</h2>
-    <p>⚽ Me gusta mucho Jugar <strong>Clah Royal</strong> un juego de estrategía y también aprender sobre nuevas tecnologías.</p>
+    <p>🎮 Me gusta mucho jugar <strong>Clash Royale</strong>, un juego de estrategia, y también aprender sobre nuevas tecnologías.</p>
 
     <h2>Pasatiempos</h2>
     <ul>
       <li>Escuchar música 🎶</li>
       <li>Jugar videojuegos 🎮</li>
-      <li>Leer y aprender como facilitar la forma de programar 📘</li>
-      <li>Practicar el programar con ayuda de la IA 🔌</li>
+      <li>Leer y aprender sobre cómo facilitar la programación 📘</li>
+      <li>Practicar la programación con ayuda de la IA 🔌</li>
     </ul>
 
     <h2>Metas</h2>
-    <p>🚀 Mis metas son seguir creciendo en el área de <strong>programación e ingeniería</strong>, pasar el curso con el queridicimo ING Ivan(no me jale profe).</p>
+    <p>🚀 Mis metas son seguir creciendo en el área de <strong>programación e ingeniería</strong> y aprobar el curso con el queridísimo ING. Iván (¡no me jale profe!).</p>
 
     <a href="mas.html">⬅️ Volver a la página anterior</a>
-    <a href="index.html">⬅️ volver a la página principal</a>
+    <a href="index.html">⬅️ Volver a la página principal</a>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Maxuel Dario. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
-```
